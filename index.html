@@ -29,8 +29,8 @@
 
     <!--NAV-->
     <header>
-        <nav class="navbar navbar-expand-lg bg-tienda sticky-top">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-tienda sticky-top container-fluid py-3">
+            <div class="container">
                 <a class="navbar-brand" href="#"><img src="./assets/img/logo.svg" width="50" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -38,7 +38,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!--Primera lista-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                         <li class="nav-item">
                             <a class="nav-link link-light active" aria-current="page" href="#">Perros</a>
                         </li>
@@ -51,11 +52,13 @@
 
 
                     </ul>
+                    <!--Busqueda-->
                     <form class="d-flex px-5 m-2 mb-lg-0 w-100" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="boton-primario " type="submit"><i class="bi bi-search"></i></button>
                     </form>
-                    <ul class="navbar-nav d-flex justify-content-center">
+                    <!--Segunda lista-->
+                    <ul class="navbar-nav d-flex justify-content-center text-center">
 
                         <li class="nav-item">
                             <a class="nav-link active link-light  " aria-current="page" href="./views/tiendas.html"><i
@@ -79,136 +82,147 @@
     <!--MAIN-->
     <main>
         <!--BANNER HERO-->
-        <section class="banner-hero">
-            <div class="banner-contenido">
-                <h1>Bienvenido a Lorem ipsum</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis doloremque, totam vitae
-                    praesentium, odit fugit dignissimos ratione, est eos vero corrupti velit non nemo cupiditate? At
-                    labore repellat ex tempore.</p> <br>
-                <a class="boton-primario" href="/">Lorem ipsum</a>
-            </div>
-            <div class="banner-contenido">
-                <img src="./assets/img/doggy-1.png" alt="">
+        <section class="container-fluid banner-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-7 pt-5"><h1>Bienvenido a Lorem ipsum</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis doloremque, totam vitae
+                            praesentium, odit fugit dignissimos ratione, est eos vero corrupti velit non nemo cupiditate? At
+                            labore repellat ex tempore.</p>
+                            <div class="py-2">
+                                <a class="boton-primario" href="/">Lorem ipsum</a>
+                            </div></div>
+                    <div class="col-sm-5 pt-5"><img src="./assets/img/doggy-1.png" alt="Bienvenido" title="Bienvenido"></div>
+                </div>
+                
+                    
             </div>
         </section>
         <!--/BANNER HERO-->
 
-        <div class="container ">
+        <div class="container py-5">
             <h2>Categorías destacadas</h2>
             <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 ">
                 <div class="col  secc-container"><a class="caja-1 destacado" href="">
-                        <div><img src="./assets/img/cachorro.png" alt="Cachorros">
-                            <h3>Cachorros</h3>
+                        <div><img src="./assets/img/cachorro.png" alt="Cachorros" title="Cachorros">
+                            <h3 class="py-2">Cachorros</h3>
                         </div>
                     </a></div>
                 <div class="col secc-container"><a class="caja-1 destacado" href="">
-                        <div><img src="./assets/img/juvenil.png" alt="Juveniles">
-                            <h3>Juveniles</h3>
+                        <div><img src="./assets/img/juvenil.png" alt="Juveniles" title="Juveniles">
+                            <h3 class="py-2">Juveniles</h3>
                         </div>
                     </a></div>
                 <div class="col secc-container"><a class="caja-1 destacado" href="">
-                        <div><img src="./assets/img/adulto.png" alt="Perros adultos">
-                            <h3>Adultos</h3>
+                        <div><img src="./assets/img/adulto.png" alt="Perros adultos" title="Adultos">
+                            <h3 class="py-2">Adultos</h3>
                         </div>
                     </a></div>
                 <div class="col secc-container"> <a class="caja-1 destacado" href="">
-                        <div><img src="./assets/img/peinado.png" alt="Cuidados para el pelo">
-                            <h3>Cuidados para el pelo</h3>
+                        <div><img src="./assets/img/peinado.png" alt="Cuidados para el pelo" title="Cuidados para el pelo">
+                            <h3 class="py-2">Cuidados para el pelo</h3>
                         </div>
                     </a></div>
             </div>
         </div>
 
-        <div class="container ">
+        <div class="container py-3">
             <div class="row ">
                 <div class="col-sm-6 secc-container"><a class="caja-2" href="./views/perro.html">
-                        <div class=""><img src="./assets/img/comida.jpg" alt="Comida para mascostas">
-                            <h3>Comida para tu mascota</h3>
+                        <div class=""><img src="./assets/img/comida.jpg" alt="Comida para mascostas" title="Comida para mascostas">
+                            <h3 class="py-2">Comida para tu mascota</h3>
                         </div>
                     </a></div>
                 <div class="col-sm-6 secc-container"> <a class="caja-2" href="">
-                        <div class=""><img src="./assets/img/accesorios.jpg" alt="Accesorios de paseo">
-                            <h3>Accesorios de paseo para tu mascota</h3>
+                        <div class=""><img src="./assets/img/accesorios.jpg" alt="Accesorios de paseo"  title="Accesorios de paseo">
+                            <h3 class="py-2">Accesorios de paseo para tu mascota</h3>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="container ">
+        <div class="container py-5">
             <h2>¡Todo para tu Gato!</h2>
             <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 ">
                 <div class="col  secc-container"><a class="caja-1" href="">
-                    <div><img src="./assets/img/michi.png" alt="Michi">
-                        <h3>Michi</h3>
-                    </div>
-                </a></div>
+                        <div><img src="./assets/img/michi.png" alt="Michi" title="Michi">
+                            <h3 class="py-2">Michi</h3>
+                        </div>
+                    </a></div>
                 <div class="col secc-container"> <a class="caja-1" href="">
-                    <div><img src="./assets/img/camas-gato.png" alt="Camas para gatos">
-                        <h3>Camas</h3>
-                    </div>
-                </a></div>
+                        <div><img src="./assets/img/camas-gato.png" alt="Camas para gatos" title="Camas para gatos">
+                            <h3 class="py-2">Camas</h3>
+                        </div>
+                    </a></div>
                 <div class="col secc-container"> <a class="caja-1 " href="">
-                    <div><img src="./assets/img/juguetes-gato.png" alt="Juguetes para gatos">
-                        <h3>Juguetes</h3>
-                    </div>
-                </a></div>
+                        <div><img src="./assets/img/juguetes-gato.png" alt="Juguetes para gatos" title="Juguetes para gatos">
+                            <h3 class="py-2">Juguetes</h3>
+                        </div>
+                    </a></div>
                 <div class="col secc-container"> <a class="caja-1 " href="">
-                    <div><img src="./assets/img/comida-gato.jpg" alt="Alimento para gatos">
-                        <h3>Alimento</h3>
-                    </div>
-                </a></div>
+                        <div><img src="./assets/img/comida-gato.jpg" alt="Alimento para gatos" title="Alimento para gatos">
+                            <h3 class="py-2">Alimento</h3>
+                        </div>
+                    </a></div>
             </div>
         </div>
     </main>
-    <!--FOOTER-->
-    <footer>
-        <div class="secc-footer">
-            <div class="caja-footer">
-                <a href="#"><img class="logo" src="./assets/img/logo.svg" alt="Logo">
-                </a>
 
-            </div>
-            <div class="caja-footer">
-                <h3>Acerca de</h3>
-                <ul>
-                    <li><a href="./views/nosotros.html">Nosotros</a></li>
-                    <li><a href="#">Lorem ipsum</a></li>
-                    <li><a href="#">Lorem ipsum</a></li>
-                    <li><a href="#">Lorem ipsum</a></li>
-
-                </ul>
-            </div>
-            <div class="caja-footer">
-                <h3>Lorem ipsum</h3>
-                <ul>
-                    <li><a href="#">Lorem ipsum</a></li>
-                    <li><a href="#">Lorem ipsum</a></li>
-                    <li><a href="#">Lorem ipsum</a></li>
-                    <li><a href="#">Lorem ipsum</a></li>
-                </ul>
-            </div>
-            <div class="caja-footer">
-                <h3>Lorem ipsum</h3>
-                <ul>
-                    <li><a href="#">Lorem ipsum</a></li>
-                    <li><a href="#">Lorem ipsum</a></li>
-                    <li><a href="#">Lorem ipsum</a></li>
-                    <li><a href="#">Lorem ipsum</a></li>
-
-                </ul>
+    <!--FOOTER 2-->
+    <footer class="container-fluid">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
+                      <img class="logo" src="./assets/img/logo.svg" alt="">
+                      <span class="fs-5">Tienda de Mascotas</span>
+                    </a>
+                    <ul class="list-unstyled small">
+                      <li class="mb-2">Somos una tienda creada con cariño para tu mascota. Un espacio donde encontrarás lo mejor para su bienestar y felicidad. ¡Ven a conocernos!</li>
+                      <li class="mb-2">Todos los derechos reservados.</li>
+                      
+                    </ul>
+                  </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h3>Acerca de</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="./views/nosotros.html">Nosotros</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+    
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h3>Acerca de</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="./views/nosotros.html">Nosotros</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+    
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h3>Acerca de</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="./views/nosotros.html">Nosotros</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+    
+                    </ul>
+                </div>
+                
             </div>
         </div>
-
-        <div class="formulario-container">
-            <h3>Suscribite para recibir novedades 🤩</h3>
-            <form action="" method="post" class="susc-footer susc-form">
-                <input type="email" name="email" placeholder="tumail@mail.com" id="email">
-                <button class="boton-primario" type="submit">Suscribete</button>
-            </form>
-            <h3> Todos los derechos Reservados...</h3>
-        </div>
+        
     </footer>
+     <!--/FOOTER 2-->
+
+    <!--FOOTER-->
+
 
     <!--
     
@@ -218,13 +232,13 @@
 
 1 carpeta con:
 
-1 carpeta css con su archivo style.css
+1 carpeta css con su archivo style.css ok
 
-1 carpeta de imagenes
+1 carpeta de imagenes ok
 
-1 carpeta con 4 html
+1 carpeta con 4 html ok
 
-1 archivo index.html
+1 archivo index.html ok
 
 ❓Que debo realizar?
 

@@ -22,21 +22,16 @@ nav {
 }
 
 .logo {
-  height: 60px;
-  padding: 2vh;
+  height: 30px;
+  padding-right: 2vh;
 }
 
-ul {
-  display: flex;
-  gap: 15px;
-  list-style: none;
-  padding: 0;
+.navbar ul {
+  margin: 0 auto;
 }
 
-ul li {
-  text-align: center;
-  padding: 1vh;
-}
+
+
 
 .menu-1 {
   background-color: #ffbc03;
@@ -126,7 +121,6 @@ ul li {
 footer {
   background: #fc7121;
   color: #ffffff;
-  text-align: center;
   padding: 10px;
 }
 
@@ -138,8 +132,17 @@ footer {
 footer h3 {
   font-size: 1rem;
   font-weight: 400;
-  text-align: center;
-  padding: 1vh;
+
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #000;
+  text-decoration: none;
 }
 
 /*Suscripción*/
@@ -233,6 +236,32 @@ footer h3 {
   background: linear-gradient(135deg, #ffbc03, #f7ead7);
 }
 
+.banner-bg {
+  background: linear-gradient(135deg, #ffbc03, #f7ead7);
+  color: #ffffff;
+}
+
+
+.banner-bg h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.banner-bg p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.banner-bg a {
+  color: #000;
+  text-decoration: none;
+}
+
+.banner-bg img {
+  display: block;
+  width: 100%;
+}
+
 .banner-contenido {
   display: inline-block;
   padding: 30px;
@@ -277,8 +306,9 @@ footer h3 {
   margin: 0 auto;
 }
 
-.seccion h2 {
+.container h2 {
   font-size: 1.5rem;
+  font-weight: 600;
   color: #000000;
   margin: 10px;
 }
@@ -412,7 +442,6 @@ textarea {
   color: #000;
   text-decoration: none;
 }
-
 
 .boton-conversion {
   background-color: #fc7121;
