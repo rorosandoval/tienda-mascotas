@@ -271,7 +271,6 @@ footer h3 {
   margin: 0 auto;
 }
 
-
 .productos .secc-container {
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -315,7 +314,7 @@ footer h3 {
   border: 2px solid #f5f5f5;
   border-radius: 15px;
   margin: 10px;
-  width: 22%;
+  width: 100%;
   padding: 1.3vh;
 }
 
@@ -339,7 +338,7 @@ footer h3 {
 
 .caja-2 {
   background-color: transparent;
-  width: 47%;
+  width: 100%;
   padding: 1vh;
 }
 
@@ -359,7 +358,7 @@ footer h3 {
 }
 
 .form-container label {
-    font-family: "Nunito", serif;
+  font-family: "Nunito", serif;
   display: block;
   font-weight: bold;
   margin-top: 15px;
@@ -368,7 +367,7 @@ footer h3 {
 
 .form-container input,
 textarea {
-    font-family: "Nunito", serif;
+  font-family: "Nunito", serif;
   width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -376,7 +375,7 @@ textarea {
 }
 
 .form-container ::placeholder {
-    font-family: "Nunito", serif;
+  font-family: "Nunito", serif;
   font-size: 0.9rem;
 }
 
@@ -392,7 +391,6 @@ textarea {
 
 .horarios h3 {
   display: contents;
-  
 }
 
 /*Botones*/
@@ -400,16 +398,21 @@ textarea {
   background-color: #ffbc03;
   font-size: 1.2rem;
   font-weight: 500;
-  padding: 15px 20px 15px 20px;
-  border: 1px solid #333;
+  padding: 10px 15px 10px 15px;
+  border: none;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .boton-primario:hover {
   background-color: #e5a000;
-  border: 1px solid #000;
 }
+
+.banner-contenido a {
+  color: #000;
+  text-decoration: none;
+}
+
 
 .boton-conversion {
   background-color: #fc7121;
@@ -417,7 +420,7 @@ textarea {
   font-size: 1.1rem;
   font-weight: 500;
   border: none;
-  padding: 15px 20px 15px 20px;
+  padding: 10px 15px 10px 15px;
   width: 100%;
   border-radius: 10px;
   cursor: pointer;
@@ -427,3 +430,11 @@ textarea {
   background-color: #e5a000;
 }
 
+.bg-tienda {
+  background-color: #fc7121;
+}
+
+.hover-efecto:hover {
+  color: #333;
+  transition: color 0.3s ease-in-out, transform 0.3s;
+}
