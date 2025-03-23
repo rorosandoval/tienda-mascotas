@@ -196,7 +196,7 @@ footer a:hover {
   padding: 1vh;
 }
 
-.caja-footer ul {
+/*.caja-footer ul {
   display: block;
   gap: 15px;
   list-style: none;
@@ -222,7 +222,7 @@ footer a:hover {
 .caja-footer a:hover {
   color: black;
 }
-
+*/
 /*Main*/
 /*Banner*/
 .banner-hero {
@@ -461,6 +461,18 @@ textarea {
 
 .bg-tienda {
   background-color: #fc7121;
+}
+
+.bg-tienda a {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.bg-tienda a:hover {
+  color: #333;
+  transition: color 0.3s ease-in-out, transform 0.3s;
 }
 
 .hover-efecto:hover {
