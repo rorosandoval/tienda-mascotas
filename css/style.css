@@ -30,9 +30,6 @@ nav {
   margin: 0 auto;
 }
 
-
-
-
 .menu-1 {
   background-color: #ffbc03;
 }
@@ -132,7 +129,6 @@ footer {
 footer h3 {
   font-size: 1rem;
   font-weight: 400;
-
 }
 
 footer a {
@@ -240,7 +236,6 @@ footer a:hover {
   background: linear-gradient(135deg, #ffbc03, #f7ead7);
   color: #ffffff;
 }
-
 
 .banner-bg h1 {
   font-size: 2rem;
@@ -382,10 +377,15 @@ footer a:hover {
   width: 100%;
 }
 
+.caja-2 h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 /*Formulario de contacto*/
 .form-container {
   font-family: "Nunito", serif;
-  width: 90%;
+  width: 100%;
   background-color: transparent;
   color: #000;
 }
@@ -401,7 +401,7 @@ footer a:hover {
 .form-container input,
 textarea {
   font-family: "Nunito", serif;
-  width: 90%;
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -449,6 +449,7 @@ textarea {
 .boton-conversion {
   background-color: #fc7121;
   color: #ffffff !important;
+  text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
   border: none;
@@ -483,16 +484,12 @@ textarea {
   transition: color 0.3s ease-in-out, transform 0.3s;
 }
 
-
 /*GRID PARA PRODUCTOS*/
 .contenedor-filtros {
   display: flex;
-      grid-template-columns: repeat(12, 1fr);
-      align-items: center;
-      /* align-content: center; */
-      justify-content: space-between;
-      flex-direction: row;
-      flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contenedor-grid {
@@ -538,6 +535,10 @@ textarea {
   grid-column: span 12;
 }
 
+.column-full--nosotros {
+  grid-column: span 6;
+}
+
 @media (max-width: 768px) {
   .contenedor-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -555,6 +556,9 @@ textarea {
   .column-11,
   .column-12 {
     grid-column: span 2;
+  }
+  .column-full--nosotros {
+    grid-column: span 4;
   }
 }
 
@@ -589,13 +593,6 @@ textarea {
   transition: color 0.1s ease-in-out, transform 0.3s;
 }
 
-
-
-
-
-
-
-
-
-
-
+.podcast {
+  border-radius: 12px;
+}
