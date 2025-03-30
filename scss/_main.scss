@@ -1,0 +1,76 @@
+@use 'variables';
+@use 'mixins';
+
+
+/* Banner */
+
+.banner-bg {
+    background: linear-gradient(135deg, variables.$primary-color, #f7ead7);
+    color: #ffffff;
+
+    h1 {
+        font-size: variables.$h1-home;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: variables.$p-medium;
+        font-weight: 400;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+/* Categorías homepage */
+.secc-container {
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .destacado {
+        background-color: variables.$primary-color;
+    }
+
+    .caja-1 {
+        @include mixins.caja-borde;
+    }
+}
+
+.caja-2 {
+    @include mixins.caja-sin-borde;
+}
+
+/* Grilla de productos (filtros y orden) */
+
+
+
+.orden-productos {
+    li {
+        padding: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        text-align: left;
+        color: #000;
+        padding: 5px;
+
+        &:hover {
+            color: variables.$background-color;
+            transition: color 0.1s ease-in-out, transform 0.3s;
+        }
+    }
+
+}
+
+/* producctos */
+
+.caja-1 {
+    cursor: pointer;
+    @include mixins.caja-productos;
+}

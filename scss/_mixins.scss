@@ -1,0 +1,66 @@
+@use 'variables';
+
+@mixin h3-caja {
+    font-size: variables.$h3-grid;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+        color: variables.$background-color;
+    }
+}
+
+@mixin img-caja {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+@mixin caja-borde {
+    border: 2px solid #f5f5f5;
+    border-radius: 15px;
+    width: 100%;
+    padding: 1.3vh;
+
+    h3 {
+        @include h3-caja;
+    }
+
+    img {
+        @include img-caja;
+    }
+}
+
+@mixin caja-sin-borde {
+    width: 100%;
+    padding: 1.3vh;
+
+    h3 {
+        @include h3-caja;
+    }
+
+    img {
+        @include img-caja;
+    }
+}
+
+@mixin caja-productos {
+    border: 2px solid #f5f5f5;
+    border-radius: 15px;
+    width: 100%;
+    padding: 1.3vh;
+
+    img {
+        @include img-caja;
+    }
+
+    h3 {
+        @include h3-caja;
+    }
+}
+
+/* mixin productos */
+

@@ -1,0 +1,20 @@
+@use 'variables';
+
+footer {
+    background: variables.$background-color;
+    color: #ffffff;
+    padding: 10px;
+
+    h3 {
+        font-size: variables.$h3-footer;
+        font-weight: 400;
+    }
+
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        &:hover {
+            color: #000;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@use 'variables';
+
+.form-container {
+    width: 100%;
+    background-color: transparent;
+    color: #000;
+  
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+    }
+
+
+}
+
+.kilos {
+    input {
+        display: none;
+    }
+
+    label {
+        padding: 10px 15px;
+        margin: 5px;
+        border: 2px solid #000000;
+        cursor: pointer;
+        border-radius: 10px;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    input:checked + label {
+        background-color: #fc7121;
+        color: #ffffff;
+        border: 2px solid #fc7121;
+      }
+}

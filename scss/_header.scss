@@ -1,0 +1,15 @@
+.bg-tienda {
+    background-color: #fc7121;
+
+    a {
+        font-size: 1.1rem;
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover {
+            color: #333;
+            transition: color 0.3s ease-in-out, transform 0.3s;
+        }
+    }
+}

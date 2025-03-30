@@ -1,0 +1,167 @@
+@use 'variables';
+@use 'header';
+@use 'main';
+@use 'footer';
+@use 'mixins';
+@use 'form';
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito", serif;
+
+    .logo {
+        height: 30px;
+        padding-right: 2vh;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+}
+
+
+
+
+
+.boton {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.boton-primario {
+    @extend .boton;
+    background-color: #ffbc03;
+    color: #000;
+    &:hover {
+        background-color: #e5a000;
+    }
+}
+
+.boton-conversion {
+  background-color: #fc7121;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  padding: 10px 15px 10px 15px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: #e5a000;
+  }
+}
+
+.boton-filtro-orden {
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 10px 15px 10px 15px;
+  border: solid 1px #ffbc03;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: #e5a000;
+    transition: color 0.3s ease-in-out, transform 0.3s;
+  }
+}
+
+.hover-efecto:hover {
+    color: #333;
+    transition: color 0.3s ease-in-out, transform 0.3s;
+}
+
+.añadir-carrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .svg-carro {
+    width: 30px;
+    padding: 5px;
+    margin-left: 5px;
+    align-items: center;
+  }
+}
+
+.secc-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+/* Grid */
+
+.contenedor-filtros {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+  }
+
+  @for $i from 1 through 12 {
+    .column-#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+  
+  .column-full--nosotros {
+    grid-column: span 6;
+  }
+
+  @media (max-width: 768px) {
+    .contenedor-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+ 
+    @for $i from 1 through 12 {
+      .column-#{$i} {
+        grid-column: span 2;
+      }
+    }
+  
+    .column-full--nosotros {
+      grid-column: span 4;
+    }
+  }
+
+
+
+
+  .container {
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #000000;
+      margin-top: 10px;
+    }
+  }
+
+
+
+  
+
