@@ -6,7 +6,7 @@
 
 .banner-bg {
     background: linear-gradient(135deg, variables.$primary-color, #f7ead7);
-    color: #ffffff;
+    color: variables.$blanco;
 
     h1 {
         font-size: variables.$h1-home;
@@ -37,12 +37,12 @@
     }
 
     .caja-1 {
-        @include mixins.caja-borde;
+        @include mixins.caja-borde (1px solid variables.$primary-color, 15px, 100%, 1.3vh);
     }
 }
 
 .caja-2 {
-    @include mixins.caja-sin-borde;
+    @include mixins.caja-sin-borde (100%, 0.2vh);
 }
 
 /* Grilla de productos (filtros y orden) */
@@ -57,7 +57,7 @@
     a {
         text-decoration: none;
         text-align: left;
-        color: #000;
+        color: variables.$negro;
         padding: 5px;
 
         &:hover {

@@ -46,40 +46,44 @@ body {
 
 .boton-primario {
     @extend .boton;
-    background-color: #ffbc03;
-    color: #000;
+    background-color: variables.$primary-color;
+    color: variables.$negro;
     &:hover {
-        background-color: #e5a000;
+        background-color: variables.$hover-color;
     }
 }
 
 .boton-conversion {
-  background-color: #fc7121;
-  color: #ffffff !important;
-  text-decoration: none;
+  @extend .boton;
+  background-color: variables.$background-color;
+  color: variables.$blanco;
   font-size: 1.1rem;
   font-weight: 500;
-  border: none;
-  padding: 10px 15px 10px 15px;
   width: 100%;
-  border-radius: 10px;
-  cursor: pointer;
   &:hover {
-    background-color: #e5a000;
+    background-color: variables.$hover-color;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    color: variables.$negro;
   }
+
 }
 
 .boton-filtro-orden {
+  @extend .boton;
   background-color: transparent;
-  font-size: 1.2rem;
-  font-weight: 500;
-  padding: 10px 15px 10px 15px;
-  border: solid 1px #ffbc03;
-  border-radius: 10px;
-  cursor: pointer;
+  border: solid 1px variables.$primary-color;
   &:hover {
-    background-color: #e5a000;
-    transition: color 0.3s ease-in-out, transform 0.3s;
+    background-color: variables.$hover-color;
+    transition: 0.3s ease-in-out;
+  }
+  &:active {
+    background-color: variables.$hover-color;
+    border: solid 4px variables.$background-color;
+    transition: 0.3s ease-in-out;
+  }
+  &:focus {
+    border: solid 1px variables.$background-color;
   }
 }
 
@@ -106,6 +110,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding-bottom: 20px;
   }
 
 /* Grid */
@@ -149,14 +154,11 @@ body {
     }
   }
 
-
-
-
   .container {
     h1 {
       font-size: 1.5rem;
       font-weight: 600;
-      color: #000000;
+      color: variables.$negro;
       margin-top: 10px;
     }
   }

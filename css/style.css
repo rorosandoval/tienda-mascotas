@@ -17,6 +17,70 @@
   transition: color 0.3s ease-in-out, transform 0.3s;
 }
 
+/* 
+Acá hice el mixin de esta forma y me funcionó perfecto pero creo que si quisiera hacerlo más personalizable en el futuro no me sirve
+@mixin h3-caja {
+    font-size: variables.$h3-grid;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+        color: variables.$background-color;
+    }
+} */
+/* Esta formula me va a funcionar para el futuro en los h3 */
+/* 
+Al igual que en los h3 de cajas, las imágenes de caja preferí cambiarlas a un modo más personalizado para el futuro
+
+@mixin img-caja {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+} */
+/* Versión "mejorada"" */
+/* @mixin caja-borde {
+    border: 2px solid #f5f5f5;
+    border-radius: 15px;
+    width: 100%;
+    padding: 1.3vh;
+
+    h3 {
+        @include h3-caja (variables.$h3-grid, 600, #000, none);
+    }
+
+    img {
+        @include img-caja (flex, center, 10px, 100%);
+    }
+} */
+/* @mixin caja-c-borde {
+
+    .caja-1 {
+    @include caja-borde(4px solid #000, 15px, 100%, 1.3vh);
+}
+h3 {
+    @include h3-caja (variables.$h3-grid, 600, #000, none);
+}
+
+img {
+    @include img-caja (flex, center, 10px, 100%);
+}
+
+
+} */
+/* @mixin caja-sin-borde {
+    width: 100%;
+    padding: 1.3vh;
+
+    h3 {
+        @include h3-caja (variables.$h3-grid, 600, #000, none);
+    }
+
+    img {
+        @include img-caja (flex, center, 10px, 100%);
+    }
+} */
 /* mixin productos */
 /* Banner */
 .banner-bg {
@@ -45,30 +109,15 @@
   background-color: #ffbc03;
 }
 .secc-container .caja-1 {
-  border: 2px solid #f5f5f5;
+  border: 1px solid #ffbc03;
   border-radius: 15px;
   width: 100%;
   padding: 1.3vh;
 }
-.secc-container .caja-1 h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #000;
-  text-decoration: none;
-}
-.secc-container .caja-1 h3:hover {
-  color: #fc7121;
-}
-.secc-container .caja-1 img {
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
-  width: 100%;
-}
 
 .caja-2 {
   width: 100%;
-  padding: 1.3vh;
+  padding: 0.2vh;
 }
 .caja-2 h3 {
   font-size: 1.2rem;
@@ -93,7 +142,7 @@
 .orden-productos a {
   text-decoration: none;
   text-align: left;
-  color: #000;
+  color: #000000;
   padding: 5px;
 }
 .orden-productos a:hover {
@@ -118,7 +167,7 @@
 .caja-1 h3 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 .caja-1 h3:hover {
@@ -196,7 +245,7 @@ body main {
   margin: 0 auto;
 }
 
-.boton, .boton-primario {
+.boton, .boton-filtro-orden, .boton-conversion, .boton-primario {
   font-size: 1.2rem;
   font-weight: 500;
   padding: 10px 15px 10px 15px;
@@ -208,7 +257,7 @@ body main {
 
 .boton-primario {
   background-color: #ffbc03;
-  color: #000;
+  color: #000000;
 }
 .boton-primario:hover {
   background-color: #e5a000;
@@ -216,32 +265,33 @@ body main {
 
 .boton-conversion {
   background-color: #fc7121;
-  color: #ffffff !important;
-  text-decoration: none;
+  color: #ffffff;
   font-size: 1.1rem;
   font-weight: 500;
-  border: none;
-  padding: 10px 15px 10px 15px;
   width: 100%;
-  border-radius: 10px;
-  cursor: pointer;
 }
 .boton-conversion:hover {
   background-color: #e5a000;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  color: #000000;
 }
 
 .boton-filtro-orden {
   background-color: transparent;
-  font-size: 1.2rem;
-  font-weight: 500;
-  padding: 10px 15px 10px 15px;
   border: solid 1px #ffbc03;
-  border-radius: 10px;
-  cursor: pointer;
 }
 .boton-filtro-orden:hover {
   background-color: #e5a000;
-  transition: color 0.3s ease-in-out, transform 0.3s;
+  transition: 0.3s ease-in-out;
+}
+.boton-filtro-orden:active {
+  background-color: #e5a000;
+  border: solid 4px #fc7121;
+  transition: 0.3s ease-in-out;
+}
+.boton-filtro-orden:focus {
+  border: solid 1px #fc7121;
 }
 
 .hover-efecto:hover {
@@ -266,6 +316,7 @@ body main {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 /* Grid */
