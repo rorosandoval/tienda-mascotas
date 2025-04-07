@@ -42,8 +42,8 @@
     }
 
     input:checked + label {
-        background-color: #fc7121;
+        background-color: variables.$background-color;
         color: #ffffff;
-        border: 2px solid #fc7121;
+        border: 2px solid variables.$background-color;
       }
 }

@@ -1,5 +1,6 @@
 @use 'variables';
 @use 'mixins';
+@use 'keyframes';
 
 
 /* Banner */
@@ -7,11 +8,6 @@
 .banner-bg {
     background: linear-gradient(135deg, variables.$primary-color, #f7ead7);
     color: variables.$blanco;
-
-    h1 {
-        font-size: variables.$h1-home;
-        font-weight: 700;
-    }
 
     p {
         font-size: variables.$p-medium;
@@ -73,4 +69,21 @@
 .caja-1 {
     cursor: pointer;
     @include mixins.caja-productos;
+}
+/* página en construcción */
+.pagina-bg {
+    animation: color-fondo 2s linear infinite alternate both;
+
+    .perrito-w {
+        img {
+            clip-path: circle(38.3% at 50% 50%);
+            transition: transform 0.7s ease-in-out;
+            z-index: 1;
+
+            &:hover {
+                transform: scale(1.2)
+            }
+        }
+    }
+
 }

@@ -1,9 +1,11 @@
+@use 'variables';
+
 .bg-tienda {
-    background-color: #fc7121;
+    background-color: variables.$background-color;
 
     a {
         font-size: 1.1rem;
-        color: #ffffff;
+        color: variables.$blanco;
         font-weight: 700;
         text-decoration: none;
 

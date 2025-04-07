@@ -82,14 +82,18 @@ img {
     }
 } */
 /* mixin productos */
+@keyframes color-fondo {
+  0% {
+    background: #e5a000;
+  }
+  100% {
+    background: #fc7121;
+  }
+}
 /* Banner */
 .banner-bg {
   background: linear-gradient(135deg, #ffbc03, #f7ead7);
   color: #ffffff;
-}
-.banner-bg h1 {
-  font-size: 2rem;
-  font-weight: 700;
 }
 .banner-bg p {
   font-size: 1.5rem;
@@ -172,6 +176,19 @@ img {
 }
 .caja-1 h3:hover {
   color: #fc7121;
+}
+
+/* página en construcción */
+.pagina-bg {
+  animation: color-fondo 2s linear infinite alternate both;
+}
+.pagina-bg .perrito-w img {
+  clip-path: circle(38.3% at 50% 50%);
+  transition: transform 0.7s ease-in-out;
+  z-index: 1;
+}
+.pagina-bg .perrito-w img:hover {
+  transform: scale(1.2);
 }
 
 footer {
@@ -434,10 +451,14 @@ body main {
   }
 }
 .container h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #000000;
   margin-top: 10px;
+}
+
+.podcast {
+  padding-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

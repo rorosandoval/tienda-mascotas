@@ -1,0 +1,12 @@
+@use 'variables';
+
+
+@keyframes color-fondo {
+    0% {
+        background: variables.$hover-color;
+    }
+
+    100% {
+        background: variables.$background-color;
+    }
+}
