@@ -1,19 +1,6 @@
 @use 'variables';
 
-/* 
-Acá hice el mixin de esta forma y me funcionó perfecto pero creo que si quisiera hacerlo más personalizable en el futuro no me sirve
-@mixin h3-caja {
-    font-size: variables.$h3-grid;
-    font-weight: 600;
-    color: #000;
-    text-decoration: none;
 
-    &:hover {
-        color: variables.$background-color;
-    }
-} */
-
-/* Esta formula me va a funcionar para el futuro en los h3 */
 @mixin h3-caja ($font-size, $font-weight, $color, $tex-decoration){
     font-size: $font-size;
     font-weight: $font-weight;
@@ -25,17 +12,7 @@ Acá hice el mixin de esta forma y me funcionó perfecto pero creo que si quisie
 
 }
 
-/* 
-Al igual que en los h3 de cajas, las imágenes de caja preferí cambiarlas a un modo más personalizado para el futuro
 
-@mixin img-caja {
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    width: 100%;
-} */
-
-/* Versión "mejorada"" */
 
 @mixin img-caja ($display, $justify-content, $border-radius, $width) {
     display: $display;
@@ -45,20 +22,7 @@ Al igual que en los h3 de cajas, las imágenes de caja preferí cambiarlas a un 
 }
 
 
-/* @mixin caja-borde {
-    border: 2px solid #f5f5f5;
-    border-radius: 15px;
-    width: 100%;
-    padding: 1.3vh;
 
-    h3 {
-        @include h3-caja (variables.$h3-grid, 600, #000, none);
-    }
-
-    img {
-        @include img-caja (flex, center, 10px, 100%);
-    }
-} */
 
 @mixin caja-borde ($borde, $border-radius, $width, $padding){
     border: $borde;
@@ -79,35 +43,7 @@ Al igual que en los h3 de cajas, las imágenes de caja preferí cambiarlas a un 
     }
 }
 
-/* @mixin caja-c-borde {
 
-    .caja-1 {
-    @include caja-borde(4px solid #000, 15px, 100%, 1.3vh);
-}
-h3 {
-    @include h3-caja (variables.$h3-grid, 600, #000, none);
-}
-
-img {
-    @include img-caja (flex, center, 10px, 100%);
-}
-
-
-} */
-
-
-/* @mixin caja-sin-borde {
-    width: 100%;
-    padding: 1.3vh;
-
-    h3 {
-        @include h3-caja (variables.$h3-grid, 600, #000, none);
-    }
-
-    img {
-        @include img-caja (flex, center, 10px, 100%);
-    }
-} */
 
 @mixin caja-productos {
     border: 2px solid variables.$gris;
