@@ -1,64 +1,24 @@
 @use 'variables';
 
 
-@mixin h3-caja ($font-size, $font-weight, $color, $tex-decoration){
-    font-size: $font-size;
-    font-weight: $font-weight;
-    color: $color;
-    text-decoration: $tex-decoration;
-    &:hover {
-        color: variables.$background-color;
-    }
 
-}
-
-
-
-@mixin img-caja ($display, $justify-content, $border-radius, $width) {
-    display: $display;
-    justify-content: $justify-content;
-    border-radius: $border-radius;
-    width: $width;
-}
-
-
-
-
-@mixin caja-borde ($borde, $border-radius, $width, $padding){
+@mixin caja-borde ($borde){
     border: $borde;
-    border-radius: $border-radius;
-    width: $width;
-    padding: $padding;
 }
 
 @mixin caja-sin-borde ($width, $padding) {
     width: $width;
     padding: $padding;
-    h3 {
-        @include h3-caja (variables.$h3-grid, 600, #000, none);
-    }
-    
-    img {
-        @include img-caja (flex, center, 10px, 100%);
-    }
+
 }
 
 
 
 @mixin caja-productos {
     border: 2px solid variables.$gris;
-    border-radius: 15px;
-    width: 100%;
-    padding: 1.3vh;
 
-    img {
-        @include img-caja (flex, center, 10px, 100%);
-    }
-
-    h3 {
-        @include h3-caja (variables.$h3-grid, 600, variables.$negro, none);
-    }
 }
+
 
 /* mixin productos */
 

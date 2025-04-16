@@ -3,6 +3,7 @@
 /* Variables Color */
 /* Variables Tamaño de fuentes */
 /* Variables para grid */
+/* Espacios top y bottom*/
 .bg-tienda {
   background-color: #fc7121;
 }
@@ -50,29 +51,11 @@
 }
 .secc-container .caja-1 {
   border: 1px solid #ffbc03;
-  border-radius: 15px;
-  width: 100%;
-  padding: 1.3vh;
 }
 
 .caja-2 {
   width: 100%;
   padding: 0.2vh;
-}
-.caja-2 h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #000;
-  text-decoration: none;
-}
-.caja-2 h3:hover {
-  color: #fc7121;
-}
-.caja-2 img {
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
-  width: 100%;
 }
 
 /* Grilla de productos (filtros y orden) */
@@ -93,25 +76,10 @@
 /* producctos */
 .caja-1 {
   cursor: pointer;
-  border: 2px solid #f5f5f5;
   border-radius: 15px;
   width: 100%;
   padding: 1.3vh;
-}
-.caja-1 img {
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
-  width: 100%;
-}
-.caja-1 h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #000000;
-  text-decoration: none;
-}
-.caja-1 h3:hover {
-  color: #fc7121;
+  border: 2px solid #f5f5f5;
 }
 
 /* página en construcción */
@@ -125,6 +93,20 @@
 }
 .pagina-bg .perrito-w img:hover {
   transform: scale(1.2);
+}
+
+/* Página de producto */
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.info .span-valor {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.espacio {
+  padding: 2rem 0;
 }
 
 footer {
@@ -384,6 +366,11 @@ body main {
     grid-column: span 4;
   }
 }
+.column-full--nosotros h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 .container h1 {
   font-size: 2rem;
   font-weight: 600;
@@ -393,6 +380,27 @@ body main {
 
 .podcast {
   padding-top: 20px;
+}
+
+.h3-caja {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+}
+.h3-caja:hover {
+  color: #fc7121;
+}
+
+.img-caja {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.span-marca {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

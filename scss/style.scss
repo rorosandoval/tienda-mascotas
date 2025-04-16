@@ -157,6 +157,13 @@ body {
     }
   }
 
+.column-full--nosotros {
+  h3 {
+    font-size: variables.$h3-grid;
+    font-weight: 700;
+  }
+}
+
 .container {
     h1 {
       font-size: variables.$h1-home;
@@ -170,6 +177,27 @@ body {
     padding-top: 20px;
   }
  
+.h3-caja {
+  font-size: variables.$h3-grid;
+  font-weight: 600;
+  color: variables.$negro;
+  text-decoration: none;
+  &:hover {
+      color: variables.$background-color;
+  }
+}
+
+.img-caja {
+  display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.span-marca {
+  font-size: variables.$p-small;
+}
+
 
 
   

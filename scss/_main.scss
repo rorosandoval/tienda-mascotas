@@ -33,7 +33,7 @@
     }
 
     .caja-1 {
-        @include mixins.caja-borde (1px solid variables.$primary-color, 15px, 100%, 1.3vh);
+        @include mixins.caja-borde (1px solid variables.$primary-color);
     }
 }
 
@@ -68,6 +68,9 @@
 
 .caja-1 {
     cursor: pointer;
+    border-radius: 15px;
+  width: 100%;
+  padding: 1.3vh;
     @include mixins.caja-productos;
 }
 /* página en construcción */
@@ -87,3 +90,18 @@
     }
 
 }
+
+/* Página de producto */
+.info {
+    display: flex;
+    flex-direction: column;
+  
+    .span-valor {
+      font-size: variables.$p-medium;
+      font-weight: 700;
+    }
+  }
+ 
+  .espacio {
+    padding: variables.$espacio-l;
+  }

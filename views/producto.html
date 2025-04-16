@@ -66,12 +66,12 @@
                                     class="bi bi-shop fs-2  hover-efecto"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active link-light" aria-current="page" href="./pagina-en-mantencion.html"><i
-                                    class="bi bi-person fs-2 hover-efecto"></i></a>
+                            <a class="nav-link active link-light" aria-current="page"
+                                href="./pagina-en-mantencion.html"><i class="bi bi-person fs-2 hover-efecto"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active link-light" aria-current="page" href="./pagina-en-mantencion.html"><i
-                                    class="bi bi-cart2 fs-2 hover-efecto"></i></a>
+                            <a class="nav-link active link-light" aria-current="page"
+                                href="./pagina-en-mantencion.html"><i class="bi bi-cart2 fs-2 hover-efecto"></i></a>
                         </li>
 
                     </ul>
@@ -90,39 +90,45 @@
             <div class="container">
 
                 <div class="contenedor-grid py-5 align-items-center">
-                    <div class="column-full--nosotros caja-2"><img src="../assets/img/alimento.jpg" alt="Alimento para perro - Bravery">
+                    <div class="column-full--nosotros caja-2"><img class="img-caja" src="../assets/img/alimento.jpg"
+                            alt="Alimento para perro - Bravery" title="Bravery - Alimento para Perro adulto - 7 a 12 kilos">
                     </div>
                     <div class="column-full--nosotros caja-2">
-                        <p>Bravery</p>
+                        <span class="span-marca">Bravery</span>
                         <h1>Alimento para Perro adulto - 7 a 12 kilos</h1>
-                        Código: 12345-678
-                        <h3>$26.990 - 52.180</h3>
+                        <div class="info">
+                            <span class="span-marca">Código: 12345-678</span>
+                            <span class="span-valor">$26.990 - 52.180</span>
+
+                        </div>
+
                         <p>Alimento completo para perros adultos de razas medianas y grandes.
                         </p>
-    
+
                         <p><b>Selecciona el peso:</b></p>
                         <div class="kilos">
-                            <input type="radio" id="7Kilos" name="Kilos" value="7 Kilos">
-                            <label for="7Kilos">7 Kilos</label>
-                        
-                            <input type="radio" id="12Kilos" name="Kilos" value="12 Kilos">
-                            <label for="12Kilos">12 Kilos</label>
-                        
-                            
+                            <form action="#">
+                                <input type="radio" id="7Kilos" name="Kilos" value="7 Kilos">
+                                <label for="7Kilos">7 Kilos</label>
+
+                                <input type="radio" id="12Kilos" name="Kilos" value="12 Kilos">
+                                <label for="12Kilos">12 Kilos</label>
+                            </form>
                         </div>
-                        <br> <br>
-                        <div >
-                        <a class="añadir-carrito boton-conversion"  href="#">Añadir al carrito<span><img src="../assets/img/cart.svg" class="svg-carro" alt="Carrito"></span> </a>
+                        
+                        <div class="espacio">
+                            <a class="añadir-carrito boton-conversion" href="#">Añadir al carrito<span><img
+                                        src="../assets/img/cart.svg" class="svg-carro" alt="Carrito"></span> </a>
                         </div>
                     </div>
-    
-    
-    
-                   
-    
+
+
+
+
+
                 </div>
             </div>
-         
+
 
         </section>
 
@@ -131,14 +137,14 @@
 
     </main>
 
-   
-       <!--FOOTER-->
-       <footer class="container-fluid">
+
+    <!--FOOTER-->
+    <footer class="container-fluid">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-3 mb-3">
-                    <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="./index.html"
-                        aria-label="Bootstrap">
+                    <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"
+                        href="./index.html" aria-label="Bootstrap">
                         <img class="logo" src="../assets/img/logo.svg" alt="">
                         <span class="fs-5">Tienda de Mascotas</span>
                     </a>
@@ -165,8 +171,8 @@
                         <li><a href="../views/pagina-en-mantencion.html">Info de envíos</a></li>
                         <li><a href="../views/pagina-en-mantencion.html">Preguntas frecuentes</a></li>
                         <li><a href="../views/tiendas.html">Contácto</a></li>
-                        
-                        
+
+
 
                     </ul>
                 </div>
@@ -184,16 +190,22 @@
             </div>
         </div>
 
-        
+
         <div class="container border-top py-4">
             <div class="align-items-center row">
                 <div class="text-lg-start text-center mb-2 mb-lg-0 col-lg-5">
                     <ul class="mb-0 undefined list-inline">
                         <li class="text-ligth list-inline-item">Medios de pago</li>
-                        <li class="list-inline-item text-center"><img src="https://img.icons8.com/?size=100&id=nTLVtpxsNPaz&format=png&color=000000" alt="Mercado pago" class="w-25">
-                        <li class="list-inline-item text-center "><img src="https://img.icons8.com/?size=100&id=13608&format=png&color=000000" alt="Visa" class="w-25"></li>
-                        <li class="list-inline-item text-center "><img src="https://img.icons8.com/?size=100&id=13610&format=png&color=000000" alt="Mastercard" class="w-25"></li>
-                        
+                        <li class="list-inline-item text-center"><img
+                                src="https://img.icons8.com/?size=100&id=nTLVtpxsNPaz&format=png&color=000000"
+                                alt="Mercado pago" class="w-25">
+                        <li class="list-inline-item text-center "><img
+                                src="https://img.icons8.com/?size=100&id=13608&format=png&color=000000" alt="Visa"
+                                class="w-25"></li>
+                        <li class="list-inline-item text-center "><img
+                                src="https://img.icons8.com/?size=100&id=13610&format=png&color=000000" alt="Mastercard"
+                                class="w-25"></li>
+
                     </ul>
                 </div>
 
@@ -201,13 +213,16 @@
         </div>
         <div class="container border-top py-4">
             <div class="align-items-center row">
-                <div class="col-md-6 "><span class="small text-ligth">© 2025 <span id="copyright"></span> Tienda de mascotas.</span></div>
+                <div class="col-md-6 "><span class="small text-ligth">© 2025 <span id="copyright"></span> Tienda de
+                        mascotas.</span></div>
                 <div class="col-md-6">
                     <ul class="list-inline text-md-end mb-0 small mt-3 mt-md-0">
                         <li class="list-inline-item text-ligth ">Síguenos en</li>
-                        <li class="me-2 list-inline-item"><a class="btn-xs btn-social btn-icon" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
-                        
-                        <li class="me-2 list-inline-item text-ligth "><a class="btn-xs btn-social btn-icon " href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+                        <li class="me-2 list-inline-item"><a class="btn-xs btn-social btn-icon"
+                                href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+
+                        <li class="me-2 list-inline-item text-ligth "><a class="btn-xs btn-social btn-icon "
+                                href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
