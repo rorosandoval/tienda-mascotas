@@ -198,6 +198,19 @@ body {
   font-size: variables.$p-small;
 }
 
+.accordion-button {
+  &:focus {
+    box-shadow: none;
+  }
+  &.accordion-button:not(.collapsed) {
+    background-color: variables.$primary-color;
+    color: variables.$negro;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
 
 
   

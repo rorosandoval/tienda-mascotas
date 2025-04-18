@@ -403,4 +403,15 @@ body main {
   font-size: 1rem;
 }
 
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button.accordion-button:not(.collapsed) {
+  background-color: #ffbc03;
+  color: #000000;
+}
+.accordion-button.accordion-button:not(.collapsed):focus {
+  box-shadow: none;
+}
+
 /*# sourceMappingURL=style.css.map */
