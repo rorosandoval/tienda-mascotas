@@ -4,6 +4,8 @@ Este es un proyecto de una tienda de mascotas construido con **HTML, CSS, JavaSc
 
 ## 🚀 Páginas Activas  
 Actualmente, las siguientes páginas están disponibles y funcionales:  
+- 🛠️ `pagina-en-mantencion.html` 
+- 💡 `info.html` 
 - 🐶 `perro.html`  
 - 🏬 `tiendas.html`  
 - ℹ️ `nosotros.html`  
