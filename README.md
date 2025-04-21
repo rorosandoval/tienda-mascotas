@@ -3,16 +3,20 @@
 Este es un proyecto de una tienda de mascotas construido con **HTML, CSS, JavaScript y Bootstrap**.  
 
 ## 🚀 Páginas Activas  
-Actualmente, las siguientes páginas están disponibles y funcionales:  
+Actualmente, las siguientes páginas están disponibles y funcionales:
+- 🛠️ `pagina-en-mantencion.html` 
+- 📌 `info.html` 
 - 🐶 `perro.html`  
 - 🏬 `tiendas.html`  
-- ℹ️ `nosotros.html`  
+- ℹ️ `nosotros.html`
+- 📦 `producto-2.html`  
 - 📦 `producto.html`  
 - 🏠 `index.html`  
 
 ## 🛠 Tecnologías Usadas  
 - **Bootstrap** 🎨  
 - **CSS propio** 🎭  
+- **SASS** 💅  
 - **JavaScript** 🧩  
 - **HTML** 📄  
 
